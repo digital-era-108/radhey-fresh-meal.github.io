@@ -1,0 +1,64 @@
+/* fonts  */
+
+@font-face {
+    font-family: 'rw-r';
+    src: url(./fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'rw-m' ;
+    src: url(./fonts/Raleway-Medium.ttf);
+}
+
+
+@font-face {
+    font-family: 'rw-b' ;
+    src: url(./fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'rw-sb' ;
+    src: url(./fonts/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'rw-black' ;
+    src: url(./fonts/Raleway-Black.ttf);
+}
+
+.f{
+    display: flex;
+}
+
+.sb{
+    justify-content: space-between;
+}
+
+.sa{
+    justify-content: space-around;
+}
+
+.se{
+    justify-content: space-evenly;
+}
+
+.jc{
+    justify-content: center;
+}
+
+.ms{
+    position: relative;
+    background:#ffffff;
+}
+
+.ms::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image: url(/icons/shadow.svg);
+    bottom: -28px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
